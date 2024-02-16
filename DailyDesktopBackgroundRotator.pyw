@@ -32,7 +32,7 @@ def rotate_background(image_directory):
 
 def main():
 
-    image_directory = 'C:\\Users\\Livvy\\OneDrive\\000\\DesktopImagefileForDailyDesktopBackgroundRotator.pyw' # Replace with the path to your image directory
+    image_directory = 'C:\\insert\\images\\path\\here\\DesktopImagefileForDailyDesktopBackgroundRotator.pyw' # Replace with the path to your image directory
 
      # Schedule background rotation every 12 hours
     schedule.every(5).hours.do(rotate_background, image_directory)

@@ -2,17 +2,6 @@ import winreg
 import os
 import ctypes
 
-def is_admin():
-    try:
-        return ctypes.windll.shell32.IsUserAnAdmin()
-    except:
-        return False
-
-if is_admin():
-    print("Script is running with administrative privileges.")
-else:
-    print("Script is not running with administrative privileges.")
-
 
 def add_to_startup(file_path):
     # Open the "Run" key in the registry

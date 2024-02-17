@@ -1,7 +1,5 @@
 import winreg
 import os
-import ctypes
-
 
 def add_to_startup(file_path):
     # Open the "Run" key in the registry
